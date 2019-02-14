@@ -1,13 +1,13 @@
 import copy
-sentence= input("enter the string")
+sentence= input("enter the string") # taking the string as input
 substr=[]
 substr2=[]
 max=0
 for i in range(len(sentence)):
-    if sentence[i] not in substr:
-        substr.append(sentence[i])
+    if sentence[i] not in substr: #searching if the letter is in the substring
+        substr.append(sentence[i]) #adding the letter to substring
     else:
-        if len(substr)>max:
+        if len(substr)>max: #if the length of substring is greater than the maximun length
             substr2.clear()
             substr2=copy.deepcopy(substr)
             substr.clear()

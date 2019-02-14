@@ -52,13 +52,13 @@ class Passenger(Person,Flight):
     def get_passport_number(self):
         return self.__passenger_passport_number
 
-person1 = Person('Sumanth',21,1234567890)
-person1.set_person_gender('female')
+person1 = Person('Aashish',21,1234567890)
+person1.set_person_gender('male')
 print(person1.get_person_gender())
 print(person1._gender)
 employee1 = Employee("Nikhil",21,1234567890,'14b81a12b6')
-employee2 = Employee("Aashish",21,46178918291,'14b81a12c0')
+employee2 = Employee("Sumanth",21,46178918291,'14b81a12c0')
 employee1.get_details()
-passenger1 = Passenger("Rupesh",21,1234567890,67)
+passenger1 = Passenger("Anusha",21,1234567890,67)
 passenger1.set_passport_number('AA123456')
 print(passenger1.get_passport_number())
